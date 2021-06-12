@@ -18,7 +18,7 @@
   config.vm.define "db" do |db|
     db.vm.hostname = "db-server"
     db.vm.network "private_network", ip: "192.168.10.3"
-    config.vm.provision "shell", path: "https://raw.githubusercontent.com/edcns07/vagrant/master/scripts/centos7.9-db.sh"
+    db.vm.provision "shell", path: "https://raw.githubusercontent.com/edcns07/vagrant/master/scripts/centos7.9-db.sh"
   end
 
 end
